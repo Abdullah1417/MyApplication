@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(View view) {
-        startActivity(new Intent(MainActivity.this, signUp.class));
+        startActivity(new Intent(MainActivity.this, Home.class));
 
     }
     //Test
