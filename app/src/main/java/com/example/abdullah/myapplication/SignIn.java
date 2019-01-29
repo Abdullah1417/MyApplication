@@ -35,10 +35,10 @@ public class SignIn extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        if (mAuth.getCurrentUser() != null) {
+        /*if (mAuth.getCurrentUser() != null) {
             startActivity(new Intent(SignIn.this, MainActivity.class));
             finish();
-        }
+        }*/
         // set the view now
         setContentView(R.layout.activity_sign_in);
 
