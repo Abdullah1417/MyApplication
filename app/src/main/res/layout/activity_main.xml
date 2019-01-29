@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="242dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
@@ -18,46 +18,52 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:onClick="add"
-        android:text="Sign up"
+        android:onClick="LoginFromHome"
+        android:text="Log in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982"
+        app:layout_constraintVertical_bias="0.434"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="222dp"
-        android:layout_height="51dp"
+    <Button
+        android:id="@+id/buttonGuest"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp"
+        android:onClick="guest"
+        android:text="guest"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694"
+        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="235dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="242dp"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textEmailAddress"
+        android:layout_marginBottom="8dp"
+        android:onClick="SignUp"
+        android:text="Create account"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView10"

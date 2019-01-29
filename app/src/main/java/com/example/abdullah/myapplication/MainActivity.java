@@ -15,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -37,21 +38,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Name=(EditText) findViewById(R.id.name);
-        Email=(EditText) findViewById(R.id.email);
+        //Name=(EditText) findViewById(R.id.name);
+        //Email=(EditText) findViewById(R.id.email);
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    //@Override
+    /*public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_acvitvy_men, menu);
         return true;
-    }
+    }*/
 
-    public void add(View view) {
-        startActivity(new Intent(MainActivity.this, Home.class));
+    public void SignUp(View view) {
+        startActivity(new Intent(MainActivity.this, signUp.class));
 
     }
-    //Test
+    public void LoginFromHome(View view) {
+        startActivity(new Intent(MainActivity.this, SignIn.class));
+
+    }
+    public void guest(View view) {
+        startActivity(new Intent(MainActivity.this, Guest.class));
+
+    }
     }
 
