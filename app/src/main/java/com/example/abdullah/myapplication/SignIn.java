@@ -40,7 +40,7 @@ public class SignIn extends AppCompatActivity {
             finish();
         }*/
         // set the view now
-        setContentView(R.layout.activity_sign_in);
+        //setContentView(R.layout.activity_sign_in);
 
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
        // setSupportActionBar(toolbar);
@@ -48,11 +48,7 @@ public class SignIn extends AppCompatActivity {
         inputEmail = (EditText) findViewById(R.id.Emailsignin);
         inputPassword = (EditText) findViewById(R.id.passSignin);
         //progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        //btnSignup = (Button) findViewById(R.id.btn_signup);
-        //btnLogin = (Button) findViewById(R.id.btn_login);
-       // btnReset = (Button) findViewById(R.id.btn_reset_password);
 
-        //Get Firebase auth instance
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -94,7 +90,7 @@ public class SignIn extends AppCompatActivity {
                                 Toast.makeText(SignIn.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                             }
                         } else {
-                            Intent intent = new Intent(SignIn.this, MainActivity.class);
+                            Intent intent = new Intent(SignIn.this, MainAfterLogin.class);
                             startActivity(intent);
                             finish();
                         }
