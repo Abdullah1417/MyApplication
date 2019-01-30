@@ -66,6 +66,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, Guest.class));
 
     }
-    //sss
+    //ssss
     }
 
